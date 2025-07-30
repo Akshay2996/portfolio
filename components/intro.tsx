@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Intro() {
   return (
-    <section>
+    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -32,12 +32,24 @@ export default function Intro() {
               delay: 0.1,
               stiffness: 125,
             }}
-            className="absolute bottom-1 right-1 text-4xl"
+            className="absolute bottom-0.5 right-2 text-4xl"
           >
             👋
           </motion.span>
         </div>
       </div>
+      <motion.p
+        className="mb-10 mt-4 px-4 text-xl font-normal !leading-[1.5] sm:text-3xl"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        <span className="font-bold">Hello, I'm Akshay.</span> A Software
+        engineer who enjoys{" "}
+        <span className="underline">building solutions </span>
+        that make{" "}
+        <span className="font-bold italic">technology accessible</span> and
+        efficient for everyone.
+      </motion.p>
     </section>
   );
 }
