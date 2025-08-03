@@ -2,6 +2,8 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { BsArrowRight } from "react-icons/bs";
 
 export default function Intro() {
   return (
@@ -50,6 +52,14 @@ export default function Intro() {
         <span className="font-bold italic">technology accessible</span> and
         efficient for everyone.
       </motion.p>
+      <div>
+        <Link
+          href="/contact"
+          className="bg-gray-900 text-white px-3 py-3 flex items-center gap-2 rounded-full"
+        >
+          Contact me here <BsArrowRight />
+        </Link>
+      </div>
     </section>
   );
 }
