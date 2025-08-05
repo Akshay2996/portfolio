@@ -4,6 +4,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Intro() {
   return (
@@ -52,14 +54,28 @@ export default function Intro() {
         <span className="font-bold italic">technology accessible</span> and
         efficient for everyone.
       </motion.p>
-      <div>
+      <motion.div
+        className="flex flex-col sm:flex-row gap-2 items-center justify-center text-lg font-medium"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.15 }}
+      >
+        <a className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full">
+          Download Resume <HiDownload />
+        </a>
         <Link
-          href="/contact"
-          className="bg-gray-900 text-white px-3 py-3 flex items-center gap-2 rounded-full"
+          href="#contact"
+          className="bg-slate-50 text-black px-7 py-3 flex items-center gap-2 rounded-full"
         >
           Contact me here <BsArrowRight />
         </Link>
-      </div>
+        <a className="bg-white text-sky-800 text-[1.5rem] p-4 flex items-center gap-2 rounded-full">
+          <FaLinkedin />
+        </a>
+        <a className="bg-white text-slate-800 text-[1.5rem] p-4 flex items-center gap-2 rounded-full">
+          <FaGithub />
+        </a>
+      </motion.div>
     </section>
   );
 }
