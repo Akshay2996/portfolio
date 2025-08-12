@@ -60,18 +60,27 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.15 }}
       >
-        <a className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full">
-          Download Resume <HiDownload />
+        <a
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition-all duration-200 cursor-pointer"
+          href="/Resume.pdf"
+          download={true}
+        >
+          Download Resume{" "}
+          <HiDownload className="opacity-70 group-active:translate-y-1 transition-all duration-200" />
         </a>
+
         <Link
           href="#contact"
-          className="bg-slate-50 text-black px-7 py-3 flex items-center gap-2 rounded-full"
+          className="group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  hover:bg-gray-100 active:scale-105 transition-all duration-200"
         >
-          Contact me here <BsArrowRight />
+          Contact me here{" "}
+          <BsArrowRight className="opacity-80 group-hover:translate-x-1 group-active:translate-x-5 transition-all duration-200" />
         </Link>
+
         <a className="bg-white text-sky-800 text-[1.5rem] p-4 flex items-center gap-2 rounded-full">
           <FaLinkedin />
         </a>
+
         <a className="bg-white text-slate-800 text-[1.5rem] p-4 flex items-center gap-2 rounded-full">
           <FaGithub />
         </a>
