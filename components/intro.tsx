@@ -42,7 +42,7 @@ export default function Intro() {
           </motion.span>
         </div>
       </div>
-      <motion.p
+      <motion.h1
         className="mb-10 mt-4 px-4 text-xl font-normal !leading-[1.5] sm:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ export default function Intro() {
         that make{" "}
         <span className="font-bold italic">technology accessible</span> and
         efficient for everyone.
-      </motion.p>
+      </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row gap-2 items-center justify-center text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
