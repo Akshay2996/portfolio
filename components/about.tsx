@@ -1,9 +1,18 @@
+"use client";
+
 import React from "react";
+import SectionHeading from "./section-heading";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40">
-      <h1 className="text-3xl font-medium capitalize mb-8">About me</h1>
+    <motion.section
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+    >
+      <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         I’m Akshay Sharma, an <span className="font-medium">Engineer</span> who
         loves turning ideas into real, usable products. Over the years I’ve been
@@ -32,6 +41,6 @@ export default function About() {
         always curious, always experimenting, and always looking for the next
         challenge to grow from.
       </p>
-    </section>
+    </motion.section>
   );
 }
