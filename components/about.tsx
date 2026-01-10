@@ -19,7 +19,7 @@ export default function About() {
         building projects that sharpen my skills in{" "}
         <span className="font-medium">
           modern software development — JavaScript, Node.js, TypeScript, React,
-          Next.js, CSS and others
+          Next.js, Postgres SQL, CSS and others
         </span>
         . <span className="italic">My favorite part of this industry</span> is
         solving problems in a simple, thoughtful way and seeing others actually
