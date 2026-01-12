@@ -54,13 +54,13 @@ export default function Intro() {
         efficient for everyone.
       </motion.h1>
       <motion.div
-        className="flex flex-col sm:flex-row gap-2 items-center justify-center text-lg font-medium"
+        className="flex flex-col sm:flex-row gap-2 sm:gap-3 items-center justify-center text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.15 }}
       >
         <a
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition-all duration-200 cursor-pointer"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-100 transition-all duration-200 cursor-pointer"
           href="/Resume.pdf"
           download={true}
         >
@@ -70,14 +70,14 @@ export default function Intro() {
 
         <Link
           href="#contact"
-          className="group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  hover:bg-gray-100 active:scale-105 transition-all duration-200 border border-black/30"
+          className="group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-100 active:scale-100 transition-all duration-200 border border-black/30"
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-80 group-hover:translate-x-1 group-active:translate-x-5 transition-all duration-200" />
         </Link>
 
         <a
-          className="bg-white text-sky-800 text-[1.5rem] p-4 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-sky-900 hover:bg-gray-100 active:scale-105 transition-all duration-200 border border-black/30"
+          className="bg-white text-sky-800 text-[1.5rem] p-4 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-[1.1] hover:scale-[1.1] hover:text-sky-900 hover:bg-gray-100 active:scale-100 transition-all duration-200 border border-black/30"
           href="https://www.linkedin.com/in/akshay2996/"
           target="_blank"
           rel="noopener noreferrer"
@@ -86,7 +86,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white text-slate-800 text-[1.5rem] p-4 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-slate-950 hover:bg-gray-100 active:scale-105 transition-all duration-200 border border-black/30"
+          className="bg-white text-slate-800 text-[1.5rem] p-4 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-[1.1] hover:scale-[1.1] hover:text-slate-950 hover:bg-gray-100 active:scale-100 transition-all duration-200 border border-black/30"
           href="https://github.com/Akshay2996"
           target="_blank"
           rel="noopener noreferrer"
