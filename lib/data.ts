@@ -4,8 +4,8 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import javaScript30 from "@/public/JavaScript30.png";
 import javaScriptEffects from "@/public/JavaScriptEffects.png";
-import nasaApod from "@/public/NasaApod.png";
-import roboFriends from "@/public/RoboFriends.png";
+import sabkaBazaar from "@/public/SabkaBazaar.png";
+import twindle from "@/public/Twindle.png";
 
 export const links = [
   {
@@ -63,32 +63,32 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Twindle",
+    description:
+      "An open‑source CLI and reading experience that converts Twitter threads into readable formats like PDF, EPUB, and MOBI, for enhanced accessibility and offline reading.",
+    tags: ["Node.js", "Svelte", "HTML-to-PDF", "Open Source"],
+    imageUrl: twindle,
+  },
+  {
+    title: "Sabka Bazaar",
+    description:
+      "An e‑commerce web app for daily groceries featuring atomic design components, global state, responsive cart experience, and an accessible, touch‑friendly and mobile compatible UI.",
+    tags: ["React", "Sass", "Webpack", "React Router", "Jest", "RTL"],
+    imageUrl: sabkaBazaar,
+  },
+  {
     title: "JavaScript30",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Collection of 30 small, focused projects built with vanilla JavaScript (ES6) to deepen core JS, DOM, and browser API concepts without relying on frameworks or libraries.",
+    tags: ["JavaScript", "ES6", "HTML5", "DOM", "Browser API", "CSS"],
     imageUrl: javaScript30,
   },
   {
     title: "JavaScriptEffects",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Collection of interactive UI effects built with vanilla JavaScript, HTML5, and CSS3 - from counters, smooth scrolling, and theme toggles to particle animations, parallax landing pages, and lazy‑loaded image galleries.",
+    tags: ["JavaScript", "Svelte", "CSS3", "UI Effects", "Animations"],
     imageUrl: javaScriptEffects,
-  },
-  {
-    title: "NasaApod",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: nasaApod,
-  },
-  {
-    title: "RoboFriends",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: roboFriends,
   },
 ] as const;
 
