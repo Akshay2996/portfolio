@@ -68,6 +68,7 @@ export const projectsData = [
       "An open‑source CLI and reading experience that converts Twitter threads into readable formats like PDF, EPUB, and MOBI, for enhanced accessibility and offline reading.",
     tags: ["Node.js", "Svelte", "HTML-to-PDF", "Open Source"],
     imageUrl: twindle,
+    url: "https://github.com/twindle-co/twindle",
   },
   {
     title: "Sabka Bazaar",
@@ -75,6 +76,7 @@ export const projectsData = [
       "An e‑commerce web app for daily groceries featuring atomic design components, global state, responsive cart experience, and an accessible, touch‑friendly and mobile compatible UI.",
     tags: ["React", "Sass", "Webpack", "React Router", "Jest", "RTL"],
     imageUrl: sabkaBazaar,
+    url: "https://sabkabazaar-shopping.netlify.app/",
   },
   {
     title: "JavaScript30",
@@ -82,6 +84,7 @@ export const projectsData = [
       "Collection of 30 small, focused projects built with vanilla JavaScript (ES6) to deepen core JS, DOM, and browser API concepts without relying on frameworks or libraries.",
     tags: ["JavaScript", "ES6", "HTML5", "DOM", "Browser API", "CSS"],
     imageUrl: javaScript30,
+    url: "https://akshay2996.github.io/JavaScript-30/",
   },
   {
     title: "JavaScriptEffects",
@@ -89,6 +92,7 @@ export const projectsData = [
       "Collection of interactive UI effects built with vanilla JavaScript, HTML5, and CSS3 - from counters, smooth scrolling, and theme toggles to particle animations, parallax landing pages, and lazy‑loaded image galleries.",
     tags: ["JavaScript", "Svelte", "CSS3", "UI Effects", "Animations"],
     imageUrl: javaScriptEffects,
+    url: "https://akshay2996.github.io/JavaScript-Effects/",
   },
 ] as const;
 

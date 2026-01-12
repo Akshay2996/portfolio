@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
@@ -12,6 +13,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  url,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -23,35 +25,41 @@ export default function Project({
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
-    <motion.div
-      ref={ref}
-      style={{
-        scale: scaleProgress,
-        opacity: opacityProgress,
-      }}
-      className="group mb-3 sm:mb-8 last:mb-5"
+    <Link
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block cursor-pointer"
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:min-h-[20rem] hover:bg-gray-200 transition group-even:pl-8">
-        {/* sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20 */}
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
-          <ul className="flex flex-wrap mt-4 gap-2">
-            {tags.map((tag, index) => (
-              <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                key={index}
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <Image
-          src={imageUrl}
-          alt={title}
-          quality={95}
-          className="absolute sm:block top-1/2 -translate-y-1/2 right-6 w-[16rem] sm:w-[18rem] max-h-[14rem] rounded-lg shadow-2xl object-contain transition-transform
+      <motion.div
+        ref={ref}
+        style={{
+          scale: scaleProgress,
+          opacity: opacityProgress,
+        }}
+        className="mb-3 sm:mb-8 last:mb-5"
+      >
+        <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:min-h-[20rem] hover:bg-gray-200 transition group-even:pl-8">
+          {/* sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20 */}
+          <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+            <h3 className="text-2xl font-semibold">{title}</h3>
+            <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
+            <ul className="flex flex-wrap mt-4 gap-2">
+              {tags.map((tag, index) => (
+                <li
+                  className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                  key={index}
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <Image
+            src={imageUrl}
+            alt={title}
+            quality={95}
+            className="absolute sm:block top-1/2 -translate-y-1/2 right-6 w-[16rem] sm:w-[18rem] max-h-[14rem] rounded-lg shadow-2xl object-contain transition-transform
         group-hover:scale-[1.04]
         group-hover:-rotate-3
         group-hover:-translate-x-1
@@ -60,8 +68,9 @@ export default function Project({
         group-even:left-5
         group-even:group-hover:rotate-3
         group-even:group-hover:translate-x-1"
-        />
-      </section>
-    </motion.div>
+          />
+        </section>
+      </motion.div>
+    </Link>
   );
 }
