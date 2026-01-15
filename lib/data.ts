@@ -49,7 +49,7 @@ export const experiencesData = [
     title: "Associate Technology L1",
     location: "Bengaluru, India",
     description:
-      "I worked as a React developer in the retail banking domain, upgrading frontend capabilities with Apollo and modern testing/accessibility practices to improve performance, accessibility, and overall user experience for banking customers.",
+      "I worked as a React developer in the retail banking domain, upgrading frontend capabilities with Apollo and GraphQL using modern practices to improve performance, accessibility, and overall user experience for banking customers.",
     icon: React.createElement(FaReact),
     date: "April 2021 - September 2022",
   },
