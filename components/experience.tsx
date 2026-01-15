@@ -20,7 +20,25 @@ export default function Experience() {
       <VerticalTimeline>
         {experiencesData.map((experience, index) => (
           <React.Fragment key={index}>
-            <VerticalTimelineElement>
+            <VerticalTimelineElement
+              contentStyle={{
+                background: "#f3f4f6",
+                boxShadow: "none",
+                border: "1px solid rgba(0, 0, 0, 0.05)",
+                textAlign: "left",
+                padding: "1.3rem 2rem",
+              }}
+              contentArrowStyle={{ borderRight: "0.4rem solid #9ca3af" }}
+              date={experience.date}
+              icon={experience.icon}
+              iconStyle={{
+                background: "white",
+                fontSize: "2rem" ,
+              }}
+            >
+              <h2>
+                <strong>{experience.companyName}</strong>
+              </h2>
               <h3>{experience.title}</h3>
               <p>{experience.location}</p>
               <p>{experience.description}</p>
