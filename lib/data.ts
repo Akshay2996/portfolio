@@ -1,7 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { SiPluralsight } from "react-icons/si";
 import javaScript30 from "@/public/JavaScript30.png";
 import javaScriptEffects from "@/public/JavaScriptEffects.png";
 import sabkaBazaar from "@/public/SabkaBazaar.png";
@@ -36,28 +36,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Programmer Analyst",
+    location: "Bengaluru, India",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "At Cognizant, I strengthened my full‑stack foundations by building and delivering enterprise applications - working primarily as a front‑end React/JavaScript developer focused on UI/UX, while also implementing Dialogflow (GCP) chat solutions and a full‑stack Mentor‑On‑Demand project using Angular, Spring Boot, REST APIs, Hibernate, and MySQL",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "July 2019 - April 2021",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Associate Technology L1",
+    location: "Bengaluru, India",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "At Publicis Sapient, I worked as a React developer in the retail banking domain, upgrading frontend capabilities with Apollo and modern testing/accessibility practices to improve performance, accessibility, and overall user experience for banking customers.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "April 2021 - September 2022",
+  },
+  {
+    title: "Software Engineer 3",
+    location: "Bengaluru, India",
+    description:
+      "At Pluralsight, I led major initiatives across content ingestion, assessments, security remediation, user ID migration, and platform architecture - improving reliability and incident response, eliminating critical vulnerabilities, modernizing monorepo-based systems, and championing engineering standards, tooling, mentoring, and cross‑team collaboration.",
+    icon: React.createElement(SiPluralsight),
+    date: "September 2022 - Present",
   },
 ] as const;
 
