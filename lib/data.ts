@@ -36,26 +36,29 @@ export const links = [
 
 export const experiencesData = [
   {
+    companyName: "Cognizant",
     title: "Programmer Analyst",
     location: "Bengaluru, India",
     description:
-      "At Cognizant, I strengthened my full‑stack foundations by building and delivering enterprise applications - working primarily as a front‑end React/JavaScript developer focused on UI/UX, while also implementing Dialogflow (GCP) chat solutions and a full‑stack Mentor‑On‑Demand project using Angular, Spring Boot, REST APIs, Hibernate, and MySQL",
+      "I strengthened my full‑stack foundations by building and delivering enterprise applications - working primarily as a front‑end React/JavaScript developer focused on UI/UX, while also implementing Dialogflow (GCP) chat solutions and a full‑stack Mentor‑On‑Demand project using Angular, Spring Boot, REST APIs, Hibernate, and MySQL",
     icon: React.createElement(CgWorkAlt),
     date: "July 2019 - April 2021",
   },
   {
+    companyName: "Publicis Sapient",
     title: "Associate Technology L1",
     location: "Bengaluru, India",
     description:
-      "At Publicis Sapient, I worked as a React developer in the retail banking domain, upgrading frontend capabilities with Apollo and modern testing/accessibility practices to improve performance, accessibility, and overall user experience for banking customers.",
+      "I worked as a React developer in the retail banking domain, upgrading frontend capabilities with Apollo and modern testing/accessibility practices to improve performance, accessibility, and overall user experience for banking customers.",
     icon: React.createElement(FaReact),
     date: "April 2021 - September 2022",
   },
   {
+    companyName: "Pluralsight",
     title: "Software Engineer 3",
     location: "Bengaluru, India",
     description:
-      "At Pluralsight, I led major initiatives across content ingestion, assessments, security remediation, user ID migration, and platform architecture - improving reliability and incident response, eliminating critical vulnerabilities, modernizing monorepo-based systems, and championing engineering standards, tooling, mentoring, and cross‑team collaboration.",
+      "I led major initiatives across content ingestion, assessments, security remediation, user ID migration, and platform architecture - improving reliability and incident response, eliminating critical vulnerabilities, modernizing monorepo-based systems, and championing engineering standards, tooling, mentoring, and cross‑team collaboration.",
     icon: React.createElement(SiPluralsight),
     date: "September 2022 - Present",
   },
