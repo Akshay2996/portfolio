@@ -33,10 +33,14 @@ export default function Contact() {
           className="h-14 px-4 rounded-lg borderBlack"
           type="email"
           placeholder="Your email"
+          maxLength={100}
+          required
         />
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4"
           placeholder="Your message"
+          maxLength={500}
+          required
         />
         <button
           type="submit"
