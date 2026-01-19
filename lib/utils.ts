@@ -4,3 +4,20 @@ export const validateString = (value: unknown, maxLength: number) => {
   }
   return true;
 };
+
+export const getErrorMessage = (error: unknown): string => {
+  let message: string;
+
+  if (
+    error instanceof Error ||
+    (error && typeof error === "object" && "message" in error)
+  ) {
+    message = String(error.message);
+  } else if (typeof error === "string") {
+    message = error;
+  } else {
+    message = "Something went wrong.Error type is not a string or an object";
+  }
+
+  return message;
+};
