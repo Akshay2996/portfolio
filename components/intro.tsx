@@ -70,7 +70,7 @@ export default function Intro() {
         transition={{ delay: 0.15 }}
       >
         <a
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-100 transition-all duration-200 cursor-pointer"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-100 transition-all duration-200 cursor-pointer dark:bg-white/10"
           href="/Resume.pdf"
           download={true}
         >
@@ -91,7 +91,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="bg-white text-sky-800 text-[1.5rem] p-4 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-[1.1] hover:scale-[1.1] hover:text-sky-900 hover:bg-gray-100 active:scale-100 transition-all duration-200 borderBlack"
+          className="bg-white text-sky-800 text-[1.5rem] p-4 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-[1.1] hover:scale-[1.1] hover:text-sky-900 hover:bg-gray-100 active:scale-100 transition-all duration-200 borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/akshay2996/"
           target="_blank"
           rel="noopener noreferrer"
@@ -100,7 +100,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white text-slate-800 text-[1.5rem] p-4 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-[1.1] hover:scale-[1.1] hover:text-slate-950 hover:bg-gray-100 active:scale-100 transition-all duration-200 borderBlack"
+          className="bg-white text-slate-800 text-[1.5rem] p-4 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-[1.1] hover:scale-[1.1] hover:text-slate-950 hover:bg-gray-100 active:scale-100 transition-all duration-200 borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/Akshay2996"
           target="_blank"
           rel="noopener noreferrer"
