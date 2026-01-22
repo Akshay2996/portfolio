@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Akshay Sharma – Portfolio
 
-## Getting Started
+A handcrafted developer portfolio built with modern React tooling, focused on accessibility, performance, and a smooth dark/light experience.
 
-First, run the development server:
+## Tech Stack
+
+- Next.js App Router (TypeScript)
+- React 19 + Server/Client Components
+- Tailwind CSS 4
+- Framer Motion (animations, scroll‑linked effects)
+- React Icons
+- React Hot Toast (feedback on form submit)
+- React Vertical Timeline Component (experience section)
+
+## Features & Implementation
+
+- **Responsive layout** – Custom sections for Home, About, Skills, Experience, Projects, and Contact, all laid out with Tailwind utility classes and responsive breakpoints.
+- **Sticky glassmorphism header** – Animated header built with Framer Motion and Tailwind (`backdrop-blur`, translucent backgrounds) plus an active section highlight pill using shared `layoutId` for smooth transitions.
+- **Section tracking** – `useSectionInView` hook (React Intersection Observer) + `ActiveSectionContext` to track the section in view and keep header navigation and scroll‑to‑section clicks in sync.
+- **Dark / light theme** – Theme context + localStorage + `prefers-color-scheme` detection; toggles a `dark` class on `<html>` and uses Tailwind `dark:` variants across the app, with smooth `transition-colors` on body, header, cards, and buttons.
+- **Intro / hero** – Animated avatar, greeting text, download‑resume CTA, contact CTA, and social icons, all using Framer Motion entrance animations and accessible links.
+- **Experience timeline** – Data‑driven experience entries rendered via `react-vertical-timeline-component`, with custom theming for light/dark, and company, role, location, and description content sourced from `lib/data.ts`.
+- **Projects section** – Scroll‑linked project cards using `useScroll` and `useTransform` from Framer Motion for scale/opacity effects; each card has image, description, tech tags, and external links.
+- **Skills cloud** – Skills rendered from `skillsData` with responsive layout and dark‑mode‑aware styling.
+- **Contact form** – Email form wired to a server action (`sendEmail`) with validation, `useFormStatus`‑powered submit button state, and success/error toasts via React Hot Toast.
+- **Footer** – Minimal footer describing the tech stack used to build and deploy the portfolio.
+
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The app is optimized for deployment on Vercel and uses `next/font` with Geist for performant typography.
