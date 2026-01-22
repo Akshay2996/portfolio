@@ -1,6 +1,6 @@
 ## Akshay Sharma – Portfolio
 
-A handcrafted developer portfolio built with modern React tooling, focused on accessibility, performance, and a smooth dark/light experience.
+A handcrafted engineer's portfolio built with modern React tooling, focused on accessibility, performance, and a smooth dark/light experience.
 
 ## Tech Stack
 
